@@ -60,7 +60,7 @@ ls
 pwd
 case ${machine} in
 	am57xx-evm|dragonboard-410c|hikey)
-		local_rootfs_img=$(find . -type f -name '*rpb-console-image-lkft-*.img')
+		local_rootfs_img=$(find . -type f -name '*rpb-console-image-lkft-*.img*')
 		mv ${local_rootfs_img} rpb-console-image-lkft.rootfs.img
 		ls -l
 		pwd
